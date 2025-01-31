@@ -22,3 +22,13 @@
 - Before this paper, people tried to use Transformers but couldn't scale because they didn't leverage modern GPU architecture for acceleration
 - Transformers lack inductive bias (built-in assumption a model has about the data) inherent to CNNs, such as translation equivariance and locality
 - Vision Transformer (ViT) -> split image into patches, flatten them, add positional embeddings, and feed them to a Transformer
+
+### 31st January
+
+[Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)
+
+- pretrained langauge models store factual information in their weights, hard to pin point 
+- retrieval-augmented generation (RAG) model -> retrieve relevant information from a knowledge source and then generate a response
+- maginalise latent documents - top-k retrieval - per output basis/token
+- retriver (p_n(z|x)) -> x is query and z is the retrived document (BERT Based)
+- generator (p(y_i|x,z,y_1:i-1)) -> x is query, z is the retrived document, and y is the output
