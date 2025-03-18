@@ -33,7 +33,7 @@
 - retriver (p_n(z|x)) -> x is query and z is the retrived document (BERT Based)
 - generator (p(y_i|x,z,y_1:i-1)) -> x is query, z is the retrived document, and y is the output
 
-## 18th March
+### 18th March
 
 [Transformers without Normalization](https://arxiv.org/abs/2503.10622)
 
