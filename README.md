@@ -32,3 +32,12 @@
 - maginalise latent documents - top-k retrieval - per output basis/token
 - retriver (p_n(z|x)) -> x is query and z is the retrived document (BERT Based)
 - generator (p(y_i|x,z,y_1:i-1)) -> x is query, z is the retrived document, and y is the output
+
+## 18th March
+
+[Transformers without Normalization](https://arxiv.org/abs/2503.10622)
+
+- DyT: A simple, element-wise operation DyT(x) = tanh(αx) replacing normalization layers in Transformers.
+- Inspired by Layer Norm’s S-shaped tanh-like mappings.
+- Matches or exceeds performance of normalized Transformers without requiring hyperparameter tuning.
+- DyT significantly reduces inference and training time compared to RMSNorm in LLaMA models.
